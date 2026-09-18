@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как поставить Claude на Windows в России в 2026</title>
+<style>
+  :root {
+    --bg: #f6f8fb;
+    --text: #0f172a;
+    --muted: #64748b;
+    --accent: #0ea5e9;
+    --accent-2: #0369a1;
+    --warn-bg: #fff7ed;
+    --warn-border: #ffedd5;
+    --warn-text: #c2410c;
+    --code-bg: #0b1220;
+    --code-text: #e2e8f0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--accent); }
+  h1, h2, h3 { line-height: 1.2; }
+  .lead {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-top: 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .lead h1 {
+    margin-top: 6px;
+    font-size: 28px;
+    color: var(--text);
+  }
+  .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+    border: 1px solid #bae6fd;
+    padding: 6px 12px;
+    border-radius: 999px;
+    color: var(--accent-2);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .callout {
+    margin: 18px 0;
+    padding: 14px 16px;
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 10px;
+    color: var(--warn-text);
+  }
+  .method {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 14px 0;
+  }
+  .method h3 { margin-top: 4px; }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  .checklist { columns: 2; column-gap: 24px; }
+  .checklist li { break-inside: avoid; }
+  @media (max-width: 640px) { .checklist { columns: 1; } }
+  .small { color: var(--muted); font-size: 14px; }
+  .muted { color: var(--muted); }
+  .step-num {
+    display: inline-block;
+    background: #0ea5e9;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    margin-right: 6px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  th { background: #f1f5f9; }
+</style>
+</head>
+<body>
+
+<div class="badge">Windows · Россия · обновлено 2026</div>
+
+<div class="lead">
+  <h1>Как поставить Claude на Windows в России</h1>
+  <p>
+    Если при заходе на <strong>claude.ai</strong> появляется надпись
+    <em>«App unavailable in your region»</em> — это не одна блокировка, а сразу
+    несколько: российский провайдер режет домены, а Anthropic дополнительно
+    проверяет IP, страну карты и регион аккаунта. Поэтому «включил VPN — заработало»
+    чаще всего не работает.
+  </p>
+  <p class="small">
+    Ниже — три способа, которые реально применяют пользователи в 2026 году.
+    Выбирайте по своим возможностям: от самого простого к более сложному.
+  </p>
+</div>
+
+<h2>Что нужно понимать в самом начале</h2>
+<ul>
+  <li>Anthropic смотрит на три вещи одновременно: откуда IP, какой регион у аккаунта,
+    и в какой стране выпущена карта. Если хотя бы одно не совпадает — откажет.</li>
+  <li>Бесплатные VPN почти всегда в чёрных списках Cloudflare. Лучше платный
+    сервис с обфускацией трафика.</li>
+  <li>Cookie и старые сессии в браузере «палят» ваш реальный регион — сбрасывайте
+    их перед каждой попыткой.</li>
+</ul>
+
+<h2>Способ 1. Купить готовый аккаунт Claude (самый простой)</h2>
+<div class="method">
+  <p>
+    Если не хочется ничего настраивать — есть продавцы готовых аккаунтов Claude Pro
+    и Claude Max. Они регистрируют аккаунт в поддерживаемой стране и продают
+    логин и пароль.
+  </p>
+  <ul>
+    <li>Оплата в рублях через СБП, без зарубежной карты.</li>
+    <li>Доступ обычно приходит за 15–40 минут.</li>
+    <li>Цены: <strong>от $24 до $32 в месяц</strong> за Claude Pro и
+      <strong>от $105 до $135 в месяц</strong> за Claude Max (с лимитами ×5).</li>
+  </ul>
+  <p class="small">
+    Минус: аккаунт чужой, и при смене пароля продавцом вы можете потерять доступ.
+    Берите только у проверенных продавцов с отзывами.
+  </p>
+</div>
+
+<h2>Способ 2. Готовый VPN + виртуальная карта</h2>
+<div class="method">
+  <p>
+    Этот способ подойдёт тем, кто готов оформить себе карту иностранного банка
+    или виртуальную карту.
+  </p>
+  <ol>
+    <li>Выберите VPN с обфускацией и серверами в стране, где Claude точно работает
+      (США, Великобритания, Германия, Нидерланды). Проверенные варианты:
+      <strong>NordVPN</strong>, <strong>Surfshark</strong>, <strong>ExpressVPN</strong>.</li>
+    <li>Оформите виртуальную карту в той же стране:
+      <ul>
+        <li>Wise или Revolut — для стран ЕС;</li>
+        <li>Казахстанская или грузинская виртуальная карта — дешевле, выпуск
+          от $15–35, пополнение с комиссией 4–7%.</li>
+      </ul>
+    </li>
+    <li>Очистите cookie в браузере или откройте новый профиль.</li>
+    <li>Включите VPN, выберите сервер в стране карты.</li>
+    <li>Зайдите на <strong>claude.ai</strong> и зарегистрируйте новый аккаунт.</li>
+    <li>Оплатите подписку картой из того же региона.</li>
+  </ol>
+  <p class="small">
+    Важно: Турция в 2026 перестал быть надёжным — Anthropic ужесточил проверки
+    для турецких аккаунтов.
+  </p>
+</div>
+
+<h2>Способ 3. Без VPN: альтернативные площадки и клиенты</h2>
+<div class="method">
+  <p>Если нужны разовые ответы или код-ревью — можно использовать сторонние
+    сервисы, где Claude доступен без прямого захода на claude.ai:</p>
+  <ul>
+    <li><strong>Poe</strong> — подписка даёт доступ к нескольким моделям,
+      включая Claude Opus и Sonnet.</li>
+    <li><strong>OpenRouter</strong> — агрегатор платных API, пополнение через
+      карту поддерживаемой страны, выдаёт ключ к Claude и другим моделям.</li>
+    <li><strong>TypingMind</strong> и <strong>LibreChat</strong> — клиенты,
+      которые подключаются к API Anthropic напрямую.</li>
+  </ul>
+  <p class="small">
+    Здесь нужен тот же «тройной» контроль: карта из поддерживаемой страны,
+    IP из той же страны и аккаунт, зарегистрированный там же.
+  </p>
+</div>
+
+<h2>Чек-лист перед запуском</h2>
+<ul class="checklist">
+  <li>VPN с обфускацией включён</li>
+  <li>Сервер в стране карты</li>
+  <li>Карта из той же страны</li>
+  <li>Новый профиль браузера</li>
+  <li>Cookie и кэш очищены</li>
+  <li>DNS через DoH/DoT</li>
+</ul>
+
+<h2>Если всё равно не работает</h2>
+<ul>
+  <li>Переключите VPN-сервер на другой в той же стране — часть IP у провайдера
+    может быть в чёрном списке Cloudflare.</li>
+  <li>Попробуйте мобильный интернет вместо домашнего Wi-Fi.</li>
+  <li>Отключите расширения браузера, особенно антибаннеры и блокировщики рекламы —
+    они часто ломают Cloudflare-проверку.</li>
+  <li>Не переключайте страну VPN внутри одной сессии — Anthropic это запоминает.</li>
+  <li>Если появляется бесконечная проверка Cloudflare — смените IP, текущий уже
+    «светился» в спам-фильтрах.</li>
+</ul>
+
+<h2>Что по ценам в 2026</h2>
+<table>
+  <tr><th>Вариант</th><th>Стоимость</th><th>Что нужно</th></tr>
+  <tr><td>Готовый аккаунт у реселлера</td><td>$24–32/мес за Pro</td><td>Только СБП</td></tr>
+  <tr><td>Свой аккаунт + VPN + Wise/Revolut</td><td>$20/мес за Pro + $3–10 за VPN</td><td>VPN, карта, чистый браузер</td></tr>
+  <tr><td>Свой аккаунт + казахстанская карта</td><td>$15–35 выпуск + 4–7% комиссия</td><td>Карта, VPN, аккаунт</td></tr>
+  <tr><td>Poe или OpenRouter</td><td>$20/мес подписка</td><td>Карта поддерживаемой страны</td></tr>
+</table>
+
+<p class="muted" style="margin-top: 28px;">
+  Источники: открытые руководства isitavailablein.com, codehummus.com и
+  marix.app (обновления 2026 года), а также обсуждения пользователей.
+</p>
+
+</body>
+</html>
